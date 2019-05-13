@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20190513 12:14:16.890" generator="Robot 2.8.4 (Python 2.7.2 on win32)">
+<suite source="C:\Project\Swiggy.robot" id="s1" name="Swiggy">
+<test id="s1-t1" name="Order-Swiggy">
+<kw type="setup" name="swiggy.Launch Browser">
+<doc></doc>
+<arguments>
+<arg>https://www.swiggy.com</arg>
+</arguments>
+<msg timestamp="20190513 12:14:17.037" level="INFO">Opening browser 'chrome' to base url 'https://www.swiggy.com'</msg>
+<msg timestamp="20190513 12:14:40.672" level="INFO">Opening url 'https://www.swiggy.com'</msg>
+<status status="PASS" endtime="20190513 12:14:46.270" starttime="20190513 12:14:17.036"></status>
+</kw>
+<kw type="kw" name="swiggy.Choose Exact Location">
+<doc></doc>
+<arguments>
+<arg>Indiranagar, Bengaluru</arg>
+</arguments>
+<msg timestamp="20190513 12:14:46.271" level="INFO">Entering location as Indiranagar, Bengaluru</msg>
+<msg timestamp="20190513 12:14:46.271" level="INFO">Exact Location:-Indiranagar, Bengaluru, Karnataka, India</msg>
+<msg timestamp="20190513 12:14:46.271" level="INFO">Typing text 'Indiranagar, Bengaluru' into text field 'id=location'</msg>
+<msg timestamp="20190513 12:14:52.626" level="INFO">Waiting for first option to be visible and then select it-xpath= //div[@class='_3lmRa']//span[@class='_2W-T9'][contains(text(),'Indiranagar, Bengaluru, Karnataka, India')]</msg>
+<msg timestamp="20190513 12:14:56.654" level="INFO">Clicking element 'xpath= //div[@class='_3lmRa']//span[@class='_2W-T9'][contains(text(),'Indiranagar, Bengaluru, Karnataka, India')]'.</msg>
+<msg timestamp="20190513 12:15:00.732" level="INFO">Wait until search icon is present and visible</msg>
+<msg timestamp="20190513 12:15:11.401" level="INFO">Verifying element 'xpath= //span[contains(text(),'Search')]' is visible.</msg>
+<status status="PASS" endtime="20190513 12:15:15.872" starttime="20190513 12:14:46.270"></status>
+</kw>
+<kw type="kw" name="swiggy.Search Restaurent">
+<doc></doc>
+<arguments>
+<arg>Bite Me</arg>
+</arguments>
+<msg timestamp="20190513 12:15:15.873" level="INFO">Searching for restaurent name</msg>
+<msg timestamp="20190513 12:15:17.888" level="INFO">Clicking element 'xpath= //span[contains(text(),'Search')]'.</msg>
+<msg timestamp="20190513 12:15:30.395" level="INFO">Verifying element 'xpath=//input[@placeholder='Search for restaurants or dishes']' is visible.</msg>
+<msg timestamp="20190513 12:15:34.411" level="INFO">Typing text 'Bite Me' into text field 'xpath=//input[@placeholder='Search for restaurants or dishes']'</msg>
+<msg timestamp="20190513 12:15:48.935" level="INFO">Clicking element 'xpath=//div[contains(text(),'Bite Me')]'.</msg>
+<status status="PASS" endtime="20190513 12:16:01.360" starttime="20190513 12:15:15.872"></status>
+</kw>
+<kw type="kw" name="swiggy.Select Items To Order">
+<doc></doc>
+<arguments>
+<arg>Red Velvet Cupcake</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20190513 12:16:01.361" level="INFO">Choose item to add-Red Velvet Cupcake-2</msg>
+<msg timestamp="20190513 12:16:01.362" level="INFO">Adding Item with xpath-xpath=//div[@class='_2SyqU'][contains(text(),'Red Velvet Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']</msg>
+<msg timestamp="20190513 12:16:03.388" level="INFO">Clicking element 'xpath=//div[@class='_2SyqU'][contains(text(),'Red Velvet Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']'.</msg>
+<msg timestamp="20190513 12:16:11.518" level="INFO">count is:1</msg>
+<msg timestamp="20190513 12:16:11.518" level="INFO">xpath=//div[@class='_2SyqU'][contains(text(),'Red Velvet Cupcake')]/../../../../div[3]/div[2]/div[2]</msg>
+<msg timestamp="20190513 12:16:11.518" level="INFO">Click plus sign-0</msg>
+<msg timestamp="20190513 12:16:11.519" level="INFO">Clicking element 'xpath=//div[@class='_2SyqU'][contains(text(),'Red Velvet Cupcake')]/../../../../div[3]/div[2]/div[2]'.</msg>
+<status status="PASS" endtime="20190513 12:16:15.593" starttime="20190513 12:16:01.360"></status>
+</kw>
+<kw type="kw" name="swiggy.Select Items To Order">
+<doc></doc>
+<arguments>
+<arg>Tiramisu \ Cupcake</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20190513 12:16:15.594" level="INFO">Choose item to add-Tiramisu  Cupcake-1</msg>
+<msg timestamp="20190513 12:16:15.594" level="INFO">Adding Item with xpath-xpath=//div[@class='_2SyqU'][contains(text(),'Tiramisu  Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']</msg>
+<msg timestamp="20190513 12:16:17.627" level="INFO">Clicking element 'xpath=//div[@class='_2SyqU'][contains(text(),'Tiramisu  Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']'.</msg>
+<msg timestamp="20190513 12:16:25.745" level="INFO">count is:1</msg>
+<status status="PASS" endtime="20190513 12:16:25.745" starttime="20190513 12:16:15.593"></status>
+</kw>
+<kw type="kw" name="swiggy.Select Items To Order">
+<doc></doc>
+<arguments>
+<arg>Irish Coffee Cupcake</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20190513 12:16:25.746" level="INFO">Choose item to add-Irish Coffee Cupcake-1</msg>
+<msg timestamp="20190513 12:16:25.747" level="INFO">Adding Item with xpath-xpath=//div[@class='_2SyqU'][contains(text(),'Irish Coffee Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']</msg>
+<msg timestamp="20190513 12:16:27.778" level="INFO">Clicking element 'xpath=//div[@class='_2SyqU'][contains(text(),'Irish Coffee Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']'.</msg>
+<msg timestamp="20190513 12:16:36.030" level="INFO">count is:1</msg>
+<status status="PASS" endtime="20190513 12:16:36.030" starttime="20190513 12:16:25.746"></status>
+</kw>
+<kw type="kw" name="swiggy.Select Items To Order">
+<doc></doc>
+<arguments>
+<arg>Choco Choco Cupcake</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20190513 12:16:36.031" level="INFO">Choose item to add-Choco Choco Cupcake-1</msg>
+<msg timestamp="20190513 12:16:36.031" level="INFO">Adding Item with xpath-xpath=//div[@class='_2SyqU'][contains(text(),'Choco Choco Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']</msg>
+<msg timestamp="20190513 12:16:38.045" level="INFO">Clicking element 'xpath=//div[@class='_2SyqU'][contains(text(),'Choco Choco Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']'.</msg>
+<msg timestamp="20190513 12:16:46.177" level="INFO">count is:1</msg>
+<status status="PASS" endtime="20190513 12:16:46.177" starttime="20190513 12:16:36.031"></status>
+</kw>
+<kw type="kw" name="swiggy.Checkout And Get All Items On Checkout Page">
+<doc></doc>
+<arguments>
+</arguments>
+<msg timestamp="20190513 12:16:46.178" level="INFO">Checkout now..</msg>
+<msg timestamp="20190513 12:16:46.178" level="INFO">Clicking element 'xpath= //div[@class='_1gPB7']'.</msg>
+<msg timestamp="20190513 12:16:50.351" level="INFO">//div[@class='_2pdCL']/div</msg>
+<msg timestamp="20190513 12:16:56.584" level="INFO">4</msg>
+<msg timestamp="20190513 12:17:45.027" level="INFO">Hash of items and count on checkout page-{u'Tiramisu Cupcake': u'1', u'Irish Coffee Cupcake': u'1', u'Choco Choco Cupcake': u'1', u'Red Velvet Cupcake': u'2'}</msg>
+<status status="PASS" endtime="20190513 12:17:45.027" starttime="20190513 12:16:46.178"></status>
+</kw>
+<kw type="kw" name="swiggy.Verify Items On Checkout Page">
+<doc></doc>
+<arguments>
+<arg>Red Velvet Cupcake</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20190513 12:17:45.028" level="INFO">Verify item count on checkout page for:-Red Velvet Cupcake</msg>
+<msg timestamp="20190513 12:17:45.028" level="INFO">Expected count-2 Actual count-2</msg>
+<msg timestamp="20190513 12:17:45.029" level="INFO">Item count matching for Red Velvet Cupcake .. Great...</msg>
+<status status="PASS" endtime="20190513 12:17:45.029" starttime="20190513 12:17:45.028"></status>
+</kw>
+<kw type="kw" name="swiggy.Verify Items On Checkout Page">
+<doc></doc>
+<arguments>
+<arg>Tiramisu Cupcake</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20190513 12:17:45.030" level="INFO">Verify item count on checkout page for:-Tiramisu Cupcake</msg>
+<msg timestamp="20190513 12:17:45.030" level="INFO">Expected count-1 Actual count-1</msg>
+<msg timestamp="20190513 12:17:45.031" level="INFO">Item count matching for Tiramisu Cupcake .. Great...</msg>
+<status status="PASS" endtime="20190513 12:17:45.031" starttime="20190513 12:17:45.029"></status>
+</kw>
+<kw type="kw" name="swiggy.Verify Items On Checkout Page">
+<doc></doc>
+<arguments>
+<arg>Irish Coffee Cupcake</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20190513 12:17:45.037" level="INFO">Verify item count on checkout page for:-Irish Coffee Cupcake</msg>
+<msg timestamp="20190513 12:17:45.037" level="INFO">Expected count-1 Actual count-1</msg>
+<msg timestamp="20190513 12:17:45.038" level="INFO">Item count matching for Irish Coffee Cupcake .. Great...</msg>
+<status status="PASS" endtime="20190513 12:17:45.038" starttime="20190513 12:17:45.031"></status>
+</kw>
+<kw type="kw" name="swiggy.Verify Items On Checkout Page">
+<doc></doc>
+<arguments>
+<arg>Choco Choco Cupcake</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20190513 12:17:45.039" level="INFO">Verify item count on checkout page for:-Choco Choco Cupcake</msg>
+<msg timestamp="20190513 12:17:45.039" level="INFO">Expected count-1 Actual count-1</msg>
+<msg timestamp="20190513 12:17:45.039" level="INFO">Item count matching for Choco Choco Cupcake .. Great...</msg>
+<status status="PASS" endtime="20190513 12:17:45.040" starttime="20190513 12:17:45.038"></status>
+</kw>
+<kw type="kw" name="swiggy.Signup">
+<doc></doc>
+<arguments>
+<arg>0000000000</arg>
+<arg>abc abc</arg>
+<arg>abc@def.com</arg>
+<arg>abcdef</arg>
+</arguments>
+<msg timestamp="20190513 12:17:45.041" level="INFO">Sign up..</msg>
+<msg timestamp="20190513 12:17:45.041" level="INFO">xpath=//div[contains(text(),'SIGN UP')]</msg>
+<msg timestamp="20190513 12:17:45.041" level="INFO">Clicking element 'xpath=//div[contains(text(),'SIGN UP')]'.</msg>
+<msg timestamp="20190513 12:17:49.170" level="INFO">Typing text '0000000000' into text field 'id=mobile'</msg>
+<msg timestamp="20190513 12:17:55.378" level="INFO">Typing text 'abc abc' into text field 'id=name'</msg>
+<msg timestamp="20190513 12:18:01.539" level="INFO">Typing text 'abc@def.com' into text field 'id=email'</msg>
+<msg timestamp="20190513 12:18:07.763" level="INFO">Typing text 'abcdef' into text field 'id=password'</msg>
+<msg timestamp="20190513 12:18:13.941" level="INFO">Xpath is:xpath=//div[@class='_3GOZo']</msg>
+<msg timestamp="20190513 12:18:15.957" level="INFO">Clicking element 'xpath=//div[@class='_3GOZo']'.</msg>
+<msg timestamp="20190513 12:18:20.018" level="INFO">Xpath is:xpath=//a[@class='_2REYC']</msg>
+<msg timestamp="20190513 12:18:22.034" level="INFO">Clicking element 'xpath=//a[@class='_2REYC']'.</msg>
+<msg timestamp="20190513 12:18:32.180" level="INFO">Invalid email address</msg>
+<status status="PASS" endtime="20190513 12:18:32.180" starttime="20190513 12:17:45.040"></status>
+</kw>
+<kw type="kw" name="swiggy.Verify Email Error And Take Screenshot">
+<doc></doc>
+<arguments>
+</arguments>
+<msg timestamp="20190513 12:18:38.212" level="INFO">Invalid email address</msg>
+<msg timestamp="20190513 12:18:38.212" level="INFO">seems Error message related to email field</msg>
+<msg timestamp="20190513 12:18:40.640" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190513 12:18:40.641" starttime="20190513 12:18:32.181"></status>
+</kw>
+<kw type="kw" name="swiggy.Update Items During Checkout">
+<doc></doc>
+<arguments>
+<arg>Red Velvet Cupcake</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20190513 12:18:40.642" level="INFO">Choose item to update with count-Red Velvet Cupcake-1</msg>
+<msg timestamp="20190513 12:18:44.785" level="INFO">count is:2</msg>
+<msg timestamp="20190513 12:18:44.785" level="INFO">xpath=//div[contains(text(),'Red Velvet Cupcake')]/../../div[2]/div/div[1]/div[3]</msg>
+<msg timestamp="20190513 12:18:44.785" level="INFO">Click Minus sign during checkout-0</msg>
+<msg timestamp="20190513 12:18:44.786" level="INFO">Clicking element 'xpath=//div[contains(text(),'Red Velvet Cupcake')]/../../div[2]/div/div[1]/div[3]'.</msg>
+<msg timestamp="20190513 12:18:50.873" level="INFO">Capture current screenshot &amp; close Browser</msg>
+<msg timestamp="20190513 12:18:53.263" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190513 12:18:53.264" starttime="20190513 12:18:40.641"></status>
+</kw>
+<kw type="teardown" name="swiggy.Close Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Capture Page Screenshot">
+<doc></doc>
+<arguments>
+</arguments>
+<msg timestamp="20190513 12:18:56.300" level="FAIL">No keyword with name 'Capture Page Screenshot' found.</msg>
+<status status="FAIL" endtime="20190513 12:18:56.301" starttime="20190513 12:18:56.300"></status>
+</kw>
+<msg timestamp="20190513 12:18:56.301" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No keyword with name 'Capture Page Screenshot' found.</msg>
+<kw type="kw" name="Capture Page Screenshot">
+<doc></doc>
+<arguments>
+</arguments>
+<msg timestamp="20190513 12:18:59.028" level="FAIL">No keyword with name 'Capture Page Screenshot' found.</msg>
+<status status="FAIL" endtime="20190513 12:18:59.028" starttime="20190513 12:18:59.027"></status>
+</kw>
+<msg timestamp="20190513 12:18:59.029" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No keyword with name 'Capture Page Screenshot' found.</msg>
+<status status="PASS" endtime="20190513 12:18:59.029" starttime="20190513 12:18:53.267"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20190513 12:18:59.030" critical="yes" starttime="20190513 12:14:17.034"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20190513 12:18:59.032" starttime="20190513 12:14:16.905"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" pass="1" id="s1" name="Swiggy">Swiggy</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190513 12:18:56.301" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No keyword with name 'Capture Page Screenshot' found.</msg>
+<msg timestamp="20190513 12:18:59.029" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No keyword with name 'Capture Page Screenshot' found.</msg>
+</errors>
+</robot>
