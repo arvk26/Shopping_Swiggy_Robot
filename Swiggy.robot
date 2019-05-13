@@ -3,7 +3,7 @@ Library           swiggy.py
 
 *** Test Cases ***
 Order-Swiggy
-    [Setup]    Launch Browser    https://www.swiggy.com
+    [Setup]    Launch Browser    https://www.swiggy.com    chrome
     Choose Exact Location    Indiranagar, Bengaluru
     Search Restaurent    Bite Me
     Select Items To Order    Red Velvet Cupcake    2

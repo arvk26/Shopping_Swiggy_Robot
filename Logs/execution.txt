@@ -1,0 +1,140 @@
+==============================================================================
+20190513 14:43:04.752 - INFO - + START SUITE: Swiggy [ ]
+==============================================================================
+20190513 14:43:04.754 - INFO - +- START TEST: Order-Swiggy [ ]
+------------------------------------------------------------------------------
+20190513 14:43:04.759 - INFO - +-- START SETUP: swiggy.Launch Browser [ https://www.swiggy.com | chrome ]
+20190513 14:43:04.759 - INFO - Opening browser 'chrome' to base url 'https://www.swiggy.com'
+20190513 14:43:33.857 - DEBUG - Opened browser with session id e8997b1f32df72d9e02af9ff106348c2
+20190513 14:43:37.096 - INFO - Opening url 'https://www.swiggy.com'
+20190513 14:43:43.607 - INFO - +-- END SETUP: swiggy.Launch Browser (38849)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20190513 14:43:43.608 - INFO - +-- START KW: swiggy.Choose Exact Location [ Indiranagar, Bengaluru ]
+20190513 14:43:43.608 - INFO - Entering location as Indiranagar, Bengaluru
+20190513 14:43:43.608 - INFO - Exact Location:-Indiranagar, Bengaluru, Karnataka, India
+20190513 14:43:43.609 - INFO - Typing text 'Indiranagar, Bengaluru' into text field 'id=location'
+20190513 14:43:49.896 - INFO - Waiting for first option to be visible and then select it-xpath= //div[@class='_3lmRa']//span[@class='_2W-T9'][contains(text(),'Indiranagar, Bengaluru, Karnataka, India')]
+20190513 14:43:53.926 - INFO - Clicking element 'xpath= //div[@class='_3lmRa']//span[@class='_2W-T9'][contains(text(),'Indiranagar, Bengaluru, Karnataka, India')]'.
+20190513 14:43:58.023 - INFO - Wait until search icon is present and visible
+20190513 14:44:06.667 - INFO - Verifying element 'xpath= //span[contains(text(),'Search')]' is visible.
+20190513 14:44:10.686 - INFO - +-- END KW: swiggy.Choose Exact Location (27079)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20190513 14:44:10.687 - INFO - +-- START KW: swiggy.Search Restaurent [ Bite Me ]
+20190513 14:44:10.687 - INFO - Searching for restaurent name
+20190513 14:44:12.699 - INFO - Clicking element 'xpath= //span[contains(text(),'Search')]'.
+20190513 14:44:25.296 - INFO - Verifying element 'xpath=//input[@placeholder='Search for restaurants or dishes']' is visible.
+20190513 14:44:29.315 - INFO - Typing text 'Bite Me' into text field 'xpath=//input[@placeholder='Search for restaurants or dishes']'
+20190513 14:44:44.144 - INFO - Clicking element 'xpath=//div[contains(text(),'Bite Me')]'.
+20190513 14:44:56.605 - INFO - +-- END KW: swiggy.Search Restaurent (45919)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20190513 14:44:56.606 - INFO - +-- START KW: swiggy.Select Items To Order [ Red Velvet Cupcake | 2 ]
+20190513 14:44:56.606 - INFO - Choose item to add-Red Velvet Cupcake-2
+20190513 14:44:56.606 - INFO - Adding Item with xpath-xpath=//div[@class='_2SyqU'][contains(text(),'Red Velvet Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']
+20190513 14:44:58.620 - INFO - Clicking element 'xpath=//div[@class='_2SyqU'][contains(text(),'Red Velvet Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']'.
+20190513 14:45:06.912 - INFO - count is:1
+20190513 14:45:06.912 - INFO - xpath=//div[@class='_2SyqU'][contains(text(),'Red Velvet Cupcake')]/../../../../div[3]/div[2]/div[2]
+20190513 14:45:06.912 - INFO - Click plus sign-0
+20190513 14:45:06.913 - INFO - Clicking element 'xpath=//div[@class='_2SyqU'][contains(text(),'Red Velvet Cupcake')]/../../../../div[3]/div[2]/div[2]'.
+20190513 14:45:10.989 - INFO - +-- END KW: swiggy.Select Items To Order (14384)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20190513 14:45:10.990 - INFO - +-- START KW: swiggy.Select Items To Order [ Tiramisu \ Cupcake | 1 ]
+20190513 14:45:10.990 - INFO - Choose item to add-Tiramisu  Cupcake-1
+20190513 14:45:10.991 - INFO - Adding Item with xpath-xpath=//div[@class='_2SyqU'][contains(text(),'Tiramisu  Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']
+20190513 14:45:13.009 - INFO - Clicking element 'xpath=//div[@class='_2SyqU'][contains(text(),'Tiramisu  Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']'.
+20190513 14:45:21.159 - INFO - count is:1
+20190513 14:45:21.159 - INFO - +-- END KW: swiggy.Select Items To Order (10170)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20190513 14:45:21.160 - INFO - +-- START KW: swiggy.Select Items To Order [ Irish Coffee Cupcake | 1 ]
+20190513 14:45:21.160 - INFO - Choose item to add-Irish Coffee Cupcake-1
+20190513 14:45:21.160 - INFO - Adding Item with xpath-xpath=//div[@class='_2SyqU'][contains(text(),'Irish Coffee Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']
+20190513 14:45:23.175 - INFO - Clicking element 'xpath=//div[@class='_2SyqU'][contains(text(),'Irish Coffee Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']'.
+20190513 14:45:31.639 - INFO - count is:1
+20190513 14:45:31.640 - INFO - +-- END KW: swiggy.Select Items To Order (10479)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20190513 14:45:31.640 - INFO - +-- START KW: swiggy.Select Items To Order [ Choco Choco Cupcake | 1 ]
+20190513 14:45:31.640 - INFO - Choose item to add-Choco Choco Cupcake-1
+20190513 14:45:31.641 - INFO - Adding Item with xpath-xpath=//div[@class='_2SyqU'][contains(text(),'Choco Choco Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']
+20190513 14:45:33.656 - INFO - Clicking element 'xpath=//div[@class='_2SyqU'][contains(text(),'Choco Choco Cupcake')]/../../../../div[3]/div[2]/div[text()='ADD']'.
+20190513 14:45:41.849 - INFO - count is:1
+20190513 14:45:41.849 - INFO - +-- END KW: swiggy.Select Items To Order (10209)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20190513 14:45:41.850 - INFO - +-- START KW: swiggy.Checkout And Get All Items On Checkout Page [ ]
+20190513 14:45:41.850 - INFO - Checkout now..
+20190513 14:45:41.850 - INFO - Clicking element 'xpath= //div[@class='_1gPB7']'.
+20190513 14:45:46.028 - INFO - //div[@class='_2pdCL']/div
+20190513 14:45:52.260 - INFO - 4
+20190513 14:46:40.728 - INFO - Hash of items and count on checkout page-{u'Tiramisu Cupcake': u'1', u'Irish Coffee Cupcake': u'1', u'Choco Choco Cupcake': u'1', u'Red Velvet Cupcake': u'2'}
+20190513 14:46:40.729 - INFO - +-- END KW: swiggy.Checkout And Get All Items On Checkout Page (58878)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20190513 14:46:40.729 - INFO - +-- START KW: swiggy.Verify Items On Checkout Page [ Red Velvet Cupcake | 2 ]
+20190513 14:46:40.729 - INFO - Verify item count on checkout page for:-Red Velvet Cupcake
+20190513 14:46:40.730 - INFO - Expected count-2 Actual count-2
+20190513 14:46:40.730 - INFO - Item count matching for Red Velvet Cupcake .. Great...
+20190513 14:46:40.731 - INFO - +-- END KW: swiggy.Verify Items On Checkout Page (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20190513 14:46:40.731 - INFO - +-- START KW: swiggy.Verify Items On Checkout Page [ Tiramisu Cupcake | 1 ]
+20190513 14:46:40.731 - INFO - Verify item count on checkout page for:-Tiramisu Cupcake
+20190513 14:46:40.732 - INFO - Expected count-1 Actual count-1
+20190513 14:46:40.732 - INFO - Item count matching for Tiramisu Cupcake .. Great...
+20190513 14:46:40.732 - INFO - +-- END KW: swiggy.Verify Items On Checkout Page (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20190513 14:46:40.733 - INFO - +-- START KW: swiggy.Verify Items On Checkout Page [ Irish Coffee Cupcake | 1 ]
+20190513 14:46:40.733 - INFO - Verify item count on checkout page for:-Irish Coffee Cupcake
+20190513 14:46:40.733 - INFO - Expected count-1 Actual count-1
+20190513 14:46:40.734 - INFO - Item count matching for Irish Coffee Cupcake .. Great...
+20190513 14:46:40.734 - INFO - +-- END KW: swiggy.Verify Items On Checkout Page (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20190513 14:46:40.735 - INFO - +-- START KW: swiggy.Verify Items On Checkout Page [ Choco Choco Cupcake | 1 ]
+20190513 14:46:40.735 - INFO - Verify item count on checkout page for:-Choco Choco Cupcake
+20190513 14:46:40.735 - INFO - Expected count-1 Actual count-1
+20190513 14:46:40.735 - INFO - Item count matching for Choco Choco Cupcake .. Great...
+20190513 14:46:40.736 - INFO - +-- END KW: swiggy.Verify Items On Checkout Page (2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20190513 14:46:40.736 - INFO - +-- START KW: swiggy.Signup [ 0000000000 | abc abc | abc@def.com | abcdef ]
+20190513 14:46:40.737 - INFO - Sign up..
+20190513 14:46:40.737 - INFO - xpath=//div[contains(text(),'SIGN UP')]
+20190513 14:46:40.737 - INFO - Clicking element 'xpath=//div[contains(text(),'SIGN UP')]'.
+20190513 14:46:44.936 - INFO - Typing text '0000000000' into text field 'id=mobile'
+20190513 14:46:51.141 - INFO - Typing text 'abc abc' into text field 'id=name'
+20190513 14:46:57.317 - INFO - Typing text 'abc@def.com' into text field 'id=email'
+20190513 14:47:03.567 - INFO - Typing text 'abcdef' into text field 'id=password'
+20190513 14:47:09.732 - INFO - Xpath is:xpath=//div[@class='_3GOZo']
+20190513 14:47:11.750 - INFO - Clicking element 'xpath=//div[@class='_3GOZo']'.
+20190513 14:47:15.814 - INFO - Xpath is:xpath=//a[@class='_2REYC']
+20190513 14:47:17.830 - INFO - Clicking element 'xpath=//a[@class='_2REYC']'.
+20190513 14:47:27.988 - INFO - Invalid email address
+20190513 14:47:27.988 - INFO - +-- END KW: swiggy.Signup (47252)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20190513 14:47:27.989 - INFO - +-- START KW: swiggy.Verify Email Error And Take Screenshot [ ]
+20190513 14:47:34.017 - INFO - Invalid email address
+20190513 14:47:34.017 - INFO - seems Error message related to email field
+20190513 14:47:36.403 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-1.png"><img src="selenium-screenshot-1.png" width="800px"></a>
+20190513 14:47:36.404 - INFO - +-- END KW: swiggy.Verify Email Error And Take Screenshot (8415)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20190513 14:47:36.405 - INFO - +-- START KW: swiggy.Update Items During Checkout [ Red Velvet Cupcake | 1 ]
+20190513 14:47:36.405 - INFO - Choose item to update with count-Red Velvet Cupcake-1
+20190513 14:47:40.438 - INFO - count is:2
+20190513 14:47:40.438 - INFO - xpath=//div[contains(text(),'Red Velvet Cupcake')]/../../div[2]/div/div[1]/div[3]
+20190513 14:47:40.438 - INFO - Click Minus sign during checkout-0
+20190513 14:47:40.439 - INFO - Clicking element 'xpath=//div[contains(text(),'Red Velvet Cupcake')]/../../div[2]/div/div[1]/div[3]'.
+20190513 14:47:46.524 - INFO - Capture current screenshot & close Browser
+20190513 14:47:48.902 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-2.png"><img src="selenium-screenshot-2.png" width="800px"></a>
+20190513 14:47:48.903 - INFO - +-- END KW: swiggy.Update Items During Checkout (12499)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20190513 14:47:48.904 - INFO - +-- START TEARDOWN: swiggy.Close Browser [ ]
+20190513 14:47:48.904 - DEBUG - Closing all browsers
+20190513 14:47:51.953 - INFO - +--- START KW: Capture Page Screenshot [ ]
+20190513 14:47:51.953 - FAIL - No keyword with name 'Capture Page Screenshot' found.
+20190513 14:47:51.953 - INFO - +--- END KW: Capture Page Screenshot (0)
+20190513 14:47:51.954 - WARN - Keyword 'Capture Page Screenshot' could not be run on failure: No keyword with name 'Capture Page Screenshot' found.
+20190513 14:47:51.954 - DEBUG - Closing all browsers
+20190513 14:47:54.727 - INFO - +--- START KW: Capture Page Screenshot [ ]
+20190513 14:47:54.727 - FAIL - No keyword with name 'Capture Page Screenshot' found.
+20190513 14:47:54.727 - INFO - +--- END KW: Capture Page Screenshot (1)
+20190513 14:47:54.727 - WARN - Keyword 'Capture Page Screenshot' could not be run on failure: No keyword with name 'Capture Page Screenshot' found.
+20190513 14:47:54.728 - INFO - +-- END TEARDOWN: swiggy.Close Browser (5825)
+------------------------------------------------------------------------------
+20190513 14:47:54.728 - INFO - +- END TEST: Order-Swiggy (289976)
+------------------------------------------------------------------------------
+20190513 14:47:54.730 - INFO - + END SUITE: Swiggy (290103)
+==============================================================================

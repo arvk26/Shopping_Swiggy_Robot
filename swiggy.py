@@ -26,9 +26,12 @@ class swiggy():
         self.obj.set_selenium_speed(2)
 
 # This Fucntion will launch browser, Part of setup
-    def launch_Browser(self,url):
+    def launch_Browser(self,url,browser_name):
         try:
-            self.obj.open_browser(url,browser='chrome')
+            if browser_name.lower()=='chrome':
+                self.obj.open_browser(url,browser='chrome')
+            else:
+                self.obj.open_browser(url)
             self.obj.maximize_browser_window()
             self.obj.go_to(url)
         except:

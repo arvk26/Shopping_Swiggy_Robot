@@ -11,5 +11,5 @@
 
 ##Approach-2:
  - ** open cmd.exe and type below command:
- - ** pybot.bat --outputdir c:\project\Logs --debugfile execution --listener C:\Python27\lib\site-packages\robotide\contrib\testrunner\TestRunnerAgent.py:49172:False C:\Project\Swiggy.robot
- - ** Execution log will be present under folder : c:\project\Logs
+ - ** pybot.bat --outputdir c:\Shopping_Swiggy_Robot\Logs --debugfile execution --listener C:\Python27\lib\site-packages\robotide\contrib\testrunner\TestRunnerAgent.py:49172:False C:\Shopping_Swiggy_Robot\Swiggy.robot
+ - ** Execution log will be present under folder : c:\Shopping_Swiggy_Robot\Logs
